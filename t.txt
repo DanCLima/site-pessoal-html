@@ -1,0 +1,9 @@
+<img src="/images/passatempo/jogos/among us.jpeg" alt="Jogo 1">
+<img src="/images/passatempo/jogos/dbd.jpeg" alt="Jogo 2">
+<img src="/images/passatempo/jogos/fall-guys.jpg" alt="Jogo 3">
+<img src="/images/passatempo/jogos/friday.jpg" alt="Jogo 4">
+<img src="/images/passatempo/jogos/GC.jpg" alt="Jogo 5">
+<img src="/images/passatempo/jogos/League of Legends.jpg" alt="Jogo 6">
+<img src="/images/passatempo/jogos/overcooked.png" alt="Jogo 7">
+<img src="/images/passatempo/jogos/pummel.jpg" alt="Jogo 8">
+<img src="/images/passatempo/jogos/Valorant.jpg" alt="Jogo 9">

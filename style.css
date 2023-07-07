@@ -21,8 +21,6 @@ a:hover {
 
 .logo {
     font-size: 35px;
-    /* text-transform: uppercase; */
-    /* letter-spacing: 4px; */
 }
 nav {
     font-size: 16px;
@@ -138,8 +136,37 @@ body {
 }
 .home-content h6 {
     font-size: 20px;
-    padding: 2% 18%;
+}
 
+.line {
+    border-right: 2px solid #1C244B;
+    width:fit-content;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.typing-animation {
+    animation: blinkCursor 1s steps(40) infinite normal, 
+    typing 4s steps(40) 0.5s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    } 
+    to {
+        width: 21em;
+    }
+}
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: #1C244B
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .introduction {
@@ -184,25 +211,39 @@ body {
 
 .introduction-image {
     width: 550px;
+    transition: 0.4s;
 }
+
+.introduction-image:hover {
+    scale: 1.1;
+    transition: 0.4s;
+    cursor: pointer
+}
+
+/* .introduction-image:hover:after {
+    scale: 1.5;
+    transition: 0.4s;
+} */
 
 .hobbies {
     background-image: url(/images/passatempo/2.jpg);
     background-attachment: fixed;
     background-size: cover;
-    height: 200vh;
+    height: 350vh;
     text-align: center;
 }
 
 .hobbies h1 {
     font-size: 65px;
     padding-top: 100px;
+    margin-bottom: 5vh;
 }
 
 .hobbies h2 {
+    margin-top: 100px;
     font-size: 60px;
     font-weight: lighter ;
-    padding-top: 20px;
+    background-color: rgb(50, 74, 109, 0.5);
 }
 
 .dotted {
@@ -215,7 +256,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding-bottom: 20px;
+    transition: 0.4s;
+}
+
+.hobby-games:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .hobby-games p {
@@ -228,6 +274,7 @@ body {
 .hobbies-content h3 {
     font-size: 30px;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 .hobby-music {
@@ -236,6 +283,12 @@ body {
     justify-content: center;
     gap: 50px;
     padding-bottom: 20px;
+    transition: 0.4s;
+}
+
+.hobby-music:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .hobby-music p {
@@ -251,6 +304,12 @@ body {
     justify-content: center;
     gap: 50px;
     padding-bottom: 20px;
+    transition: 0.4s;
+}
+
+.hobby-film:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .hobby-film p {
@@ -282,8 +341,14 @@ body {
     margin-left: 20px;
     background-color: rgb(50, 74, 109, 0.5);
     width: 50vh;
-    padding: 20px;
+    padding: 40px;
     border-radius: 50px;
+    transition: 0.4s;
+}
+
+.first:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .university img {
@@ -298,8 +363,14 @@ body {
 .second {
     background-color: rgb(50, 74, 109, 0.5);
     width: 50vh;
-    padding: 20px;
+    padding: 40px;
     border-radius: 50px;
+    transition: 0.4s;
+}
+
+.second:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .chemistry img {
@@ -312,10 +383,16 @@ body {
 }
 
 .third {
-    padding: 20px;
+    padding: 40px;
     background-color: rgb(50, 74, 109, 0.5);
     width: 50vh;
     border-radius: 50px;
+    transition: 0.4s;
+}
+
+.third:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .informatics img {
@@ -360,6 +437,12 @@ body {
     height: 65px;
     border-radius: 50%;
     padding-top: 9px;
+    transition: 0.4s;
+}
+
+.instagram:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .linkedin img {
@@ -375,6 +458,12 @@ body {
     height: 65px;
     border-radius: 50%;
     padding-top: 9px;
+    transition: 0.4s;
+}
+
+.linkedin:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .github img {
@@ -390,6 +479,12 @@ body {
     height: 65px;
     border-radius: 50%;
     padding-top: 9px;
+    transition: 0.4s;
+}
+
+.github:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .gmail img {
@@ -405,6 +500,12 @@ body {
     height: 65px;
     border-radius: 50%;
     padding-top: 9px;
+    transition: 0.4s;
+}
+
+.gmail:hover {
+    scale: 1.1;
+    transition: 0.4s;
 }
 
 .footer-content {
@@ -413,5 +514,4 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-
 }

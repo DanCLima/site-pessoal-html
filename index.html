@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+    <title>Página pessoal HTML</title>
 </head>
 <body>
     <div class="background"> 
@@ -32,7 +35,7 @@
             <section class="home" id="home"> 
                 <div class="home-content">
                     <h1>Seja bem-vindo (a)</h1>
-                    <h6>Venha conhecer um pouco sobre mim...</h6>
+                    <h6 class="line typing-animation">Venha conhecer um pouco sobre mim...</h6>
                 </div>
             </section>
     
@@ -73,10 +76,8 @@
     
             <section class="hobbies" id="hobbies">
                 <div class="hobbies-content">
-                    <h1>Passatemo</h1>
-                    <h2>
-                        <span class="dotted">-----------</span> Jogos Online <span class="dotted">-----------</span>
-                    </h2>
+                    <h1>Passatempo</h1>
+                    <h2>Jogos Online</h2>
                     <div class="hobby-games">
                         <img src="/images/passatempo/jogos.png" alt="Ilustração de um computador com dois controles num jogo" width="15%">
                         <p>
@@ -86,12 +87,25 @@
                         </p>
                     </div>
                     <h3>Alguns dos meus jogos favoritos</h3>
-                    <div>
-                        <p>INSERIR CARROSSEL DE IMAGENS</p>
+
+                    <div class="swiffy-slider slider-item-show3">
+                        <ul class="slider-container">
+                            <li><img src="/images/passatempo/jogos/among us.jpeg" alt="Jogo 1" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/dbd.jpeg" alt="Jogo 2" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/fall-guys.jpg" alt="Jogo 3" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/friday.jpg" alt="Jogo 4" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/GC.jpg" alt="Jogo 5" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/League of Legends.jpg" alt="Jogo 6" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/overcooked.png" alt="Jogo 7" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/pummel.jpg" alt="Jogo 8" style="max-width: 500px;height: 300px;"></li>
+                            <li><img src="/images/passatempo/jogos/Valorant.jpg" alt="Jogo 9" style="max-width: 500px;height: 300px;"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
                     </div>
-                    <h2>
-                        <span class="dotted">-------------</span> Músicas <span class="dotted">-------------</span> 
-                    </h2>
+
+                    <h2>Músicas</h2>
                     <div class="hobby-music">
                         <img src="/images/passatempo/musica.png" alt="Ilustração de um rádio vintagem tocando música" width="15%">
                         <p>
@@ -100,9 +114,22 @@
                         </p>
                     </div>
     
-                    <h3>Alguns álbuns e músicas que tenho mais ouvido</h3>
-                    <div>
-                        <p>INSERIR CARROSSEL DE IMAGENS</p>
+                    <h3>Alguns álbuns que tenho mais ouvido</h3>
+
+                    <div class="swiffy-slider slider-item-show4">
+                        <ul class="slider-container">
+                            <li><img src="/images/passatempo/Albuns/600x600bb.jpg" alt="Album 1" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/anti.jpg" alt="Album 2" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/born to die.jpg" alt="Album 3" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/bornthisway.jpg" alt="Album 4" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/Doja Cat.jpg" alt="Album 5" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/Pitty.jpg" alt="Album 6" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/Renaissance.jpg" alt="Album 7" style="max-width: 350px;height: 350px;"></li>
+                            <li><img src="/images/passatempo/Albuns/Reputation.jpg" alt="Album 8" style="max-width: 350px;height: 350px;"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
                     </div>
     
                     <h2>Filmes</h2>
@@ -112,9 +139,25 @@
                         Ficção, comédia, terror, suspense e musicais são os meus gêneros preferidos. O que realmente me encanta é a reflexão que um bom filme provoca.</p>
                     </div>
                     <h3>Filmes que me marcaram</h3>
-                    <div>
-                        <p>INSERIR CARROSSEL DE IMAGENS</p>
+
+                    <div class="swiffy-slider slider-item-show4">
+                        <ul class="slider-container">
+                            <li><img src="/images/passatempo/filmes/600x600bb (1).jpg" alt="Filme 1" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/as branquelas.jpg" alt="Filme 2" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/crepúsculo.jpg" alt="Filme 3" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/expresso polar.jpg" alt="Filme 4" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/harry potter.jpg" alt="Filme 5" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/interestelar.jpg" alt="Filme 6" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/malévola.jpg" alt="Filme 7" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/noiva cadaver.jpg" alt="Filme 8" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/pânico 6.jpg" alt="Filme 8" style="max-width: 350px;height: 500px;"></li>
+                            <li><img src="/images/passatempo/filmes/xmen confronto final.jpg" alt="Filme 8" style="max-width: 350px;height: 500px;"></li>
+                        </ul>
+                    
+                        <button type="button" class="slider-nav"></button>
+                        <button type="button" class="slider-nav slider-nav-next"></button>
                     </div>
+                    
                 </div>
             </section>
     
@@ -186,7 +229,10 @@
             </section>
 
         </main>
+
         <script src="mobile-navbar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+
         <footer class="footer-content">
             <p>© 2023 All Rights Reserved.</p>
         </footer>
